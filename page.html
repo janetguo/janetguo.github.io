@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janet Guo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <p>Kia ora!</p>
+
+        <p>I'm Janet. I grew up in <a href="https://en.wikipedia.org/wiki/Hamilton,_New_Zealand">Kirikiriroa</a>. I was interested in winning, so I competed in some competitions, and won <a href="https://schoolspoetryaward.co.nz/">some</a> <a href="https://www2.nzqa.govt.nz/ncea/understanding-secondary-quals/nz-scholarship/top-scholar-award-winners-by-year/2022-top-scholar-award-winners/">national</a> <a href="https://www.mathsolympiad.org.nz/">and</a> <a href="https://www.ibo-info.org/en/">international</a> <a href="https://www.wsdcdebating.org/basic-01">awards</a>. I was interested in a change of scenery, so I applied to some US colleges, and now I study AI and biology at MIT.</p>
+
+        <p>I'm currently interested in drugs: <a href="https://langerlab.mit.edu/">how to deliver them</a>, <a href="https://careers.lilly.com/us/en/blogarticle/inside-the-lilly-mit-genetic-medicines-scholars-program">how to commercialize them</a>, and <a href="https://coley.mit.edu/">how to discover them</a>. I'm also interested in helping people reach their potential: I coached competitive debating/maths/biology, counseled and reviewed admissions for <a href="https://www.sparc.camp/">talent</a> <a href="https://www.atlasfellowship.org/">camps</a>, and currently direct <a href="http://hackmit.org">one of the largest collegiate hackathons in the world</a>.</p>
+
+        <p>I don't really use social media these days. If you want to know more about me, I occasionally write on <a href="https://mitadmissions.org/blogs/author/janet/">MIT Admissions</a> and sometimes write essays for my <a href="https://amatureopinion.substack.com/">amateur opinions</a>.</p>
+
+        <p>You can reach me at janetguo [at] mit [dot] edu. I'd love to chat!</p>
+
+        <p>Ngaa mihi e hoa,</p>
+
+        <div class="signature">
+            <img src="signature.png" alt="Janet Guo signature" class="signature-img">
+        </div>
+    </div>
+
+    <div class="theme-toggle">
+        <span id="toggle-text">i'm a heathen and like websites in light mode</span>
+    </div>
+
+    <div class="credit">
+        made with the help of claude sonnet 4
+    </div>
+
+    <script>
+        const body = document.body;
+        const toggleText = document.getElementById('toggle-text');
+        let isDark = true;
+
+        toggleText.addEventListener('click', () => {
+            if (isDark) {
+                body.classList.add('light-mode');
+                toggleText.textContent = "back to the dark side";
+            } else {
+                body.classList.remove('light-mode');
+                toggleText.textContent = "i'm a heathen and like websites in light mode";
+            }
+            isDark = !isDark;
+        });
+    </script>
+</body>
+</html>

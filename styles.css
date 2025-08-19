@@ -1,0 +1,113 @@
+/* Dark mode (default) */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: left;
+    padding: 20px 10px;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+
+a {
+    color: #66b3ff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #99ccff;
+}
+
+.signature {
+    margin: 20px 0;
+}
+
+.signature-img {
+    max-width: 200px;
+    height: auto;
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #bbb;
+}
+
+.credit {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+/* Light mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.light-mode a {
+    color: #0066cc;
+}
+
+body.light-mode a:hover {
+    color: #004499;
+}
+
+body.light-mode .signature-img {
+    filter: invert(0);
+}
+
+body.light-mode .theme-toggle {
+    color: #666;
+}
+
+body.light-mode .theme-toggle:hover {
+    color: #333;
+}
+
+body.light-mode .credit {
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 520px) {
+    .container {
+        margin: 0 10px;
+        max-width: none;
+    }
+
+    body {
+        padding: 20px 0;
+    }
+}
