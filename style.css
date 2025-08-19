@@ -64,16 +64,6 @@ a:hover {
     color: #bbb;
 }
 
-.credit {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    font-family: Georgia, serif;
-    font-size: 12px;
-    color: #888;
-    transition: color 0.3s ease;
-}
-
 /* Light mode */
 body.light-mode {
     background-color: #ffffff;
