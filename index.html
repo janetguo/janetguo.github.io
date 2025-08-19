@@ -21,7 +21,7 @@
         <p>Ngaa mihi e hoa,</p>
 
         <div class="signature">
-            <img src="signature_dark.png" alt="Janet Guo signature" class="signature-img" data-dark-src="signature_dark.png" data-light-src="signature_light.png">
+            <img src="signature_dark.png" alt="signature" class=".signature-img" data-dark-src="signature_dark.png" data-light-src="signature_light.png">
         </div>
     </div>
 
@@ -36,6 +36,7 @@
     <script>
         const body = document.body;
         const toggleText = document.getElementById('toggle-text');
+        const signatureImg = document.querySelector('.signature-img');
         let isDark = true;
 
         toggleText.addEventListener('click', () => {
