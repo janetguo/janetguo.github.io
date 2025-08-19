@@ -24,6 +24,10 @@ p {
     margin-bottom: 1.2em;
 }
 
+h1 {
+    font-size: medium;
+}
+
 a {
     color: #66b3ff;
     text-decoration: underline;
